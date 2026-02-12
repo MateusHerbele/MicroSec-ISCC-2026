@@ -1,0 +1,241 @@
+--------------------------------------------------
+o")~   Snort++ 3.10.2.0
+--------------------------------------------------
+Loading /home/cloudstack/raphael/snort3/etc/snort/snort.lua:
+Loading snort_defaults.lua:
+Finished snort_defaults.lua:
+	references
+	classifications
+	ips
+	binder
+	wizard
+	trace
+	ssl
+	dns
+	active
+	alerts
+	daq
+	decode
+	host_cache
+	host_tracker
+	hosts
+	network
+	packets
+	process
+	search_engine
+	so_proxy
+	stream
+	stream_ip
+	stream_icmp
+	stream_udp
+	stream_user
+	stream_file
+	arp_spoof
+	back_orifice
+	imap
+	netflow
+	normalizer
+	pop
+	rpc_decode
+	sip
+	ssh
+	telnet
+	cip
+	dnp3
+	iec104
+	mms
+	modbus
+	opcua
+	s7commplus
+	dce_smb
+	dce_tcp
+	dce_udp
+	dce_http_proxy
+	dce_http_server
+	gtp_inspect
+	port_scan
+	smtp
+	ftp_server
+	ftp_client
+	ftp_data
+	http_inspect
+	http2_inspect
+	js_norm
+	appid
+	output
+Finished /home/cloudstack/raphael/snort3/etc/snort/snort.lua:
+Loading rule args:
+Loading /home/cloudstack/raphael/snort3/rules/oi.rules:
+Finished /home/cloudstack/raphael/snort3/rules/oi.rules:
+Finished rule args:
+--------------------------------------------------
+pcre counts
+               pcre_rules: 2
+              pcre_native: 2
+--------------------------------------------------
+ips policies rule stats
+              id  loaded  shared enabled    file
+               0     186       0     186    /home/cloudstack/raphael/snort3/etc/snort/snort.lua
+--------------------------------------------------
+rule counts
+       total rules loaded: 186
+               text rules: 186
+            option chains: 186
+            chain headers: 72
+                 flowbits: 5
+     flowbits not checked: 1
+         flowbits not set: 2
+--------------------------------------------------
+port rule counts
+             tcp     udp    icmp      ip
+     any      19      12      12      12
+     src       5       2       0       0
+     dst      40      18       0       0
+    both       0       3       0       0
+   total      64      35      12      12
+--------------------------------------------------
+service rule counts          to-srv  to-cli
+                   dcerpc:       70      12
+                     dnp3:        0       6
+                      dns:        4       2
+                   gopher:        0       1
+                     http:        1       0
+                    http2:        1       0
+                    http3:        1       0
+                     imap:        1       0
+                   modbus:       21       0
+                    mysql:        0       1
+              netbios-dgm:        2       2
+              netbios-ssn:       40       5
+                      sip:        2       0
+                     snmp:        8       3
+                      ssl:        2       0
+                   syslog:        1       0
+                     tftp:        1       0
+                    total:      155      32
+--------------------------------------------------
+fast pattern groups
+                      dst: 2
+                to_server: 3
+                to_client: 3
+--------------------------------------------------
+search engine (ac_bnfa)
+                instances: 7
+                 patterns: 167
+            pattern chars: 1390
+               num states: 919
+         num match states: 62
+             memory scale: KB
+             total memory: 38.6475
+           pattern memory: 7.87402
+        match list memory: 12.3984
+        transition memory: 17.5
+        fast pattern only: 2
+appid: MaxRss diff: 2816
+appid: patterns loaded: 300
+--------------------------------------------------
+afpacket DAQ configured to passive.
+Commencing packet processing
+Retry queue interval is: 200 ms
+++ [0] enp3s0
+** caught int signal
+== stopping
+-- [0] enp3s0
+--------------------------------------------------
+Packet Statistics
+--------------------------------------------------
+daq
+                 received: 11845943
+                 analyzed: 11845943
+                  dropped: 2797259
+                    allow: 11845943
+                     idle: 68
+                 rx_bytes: 675219319
+--------------------------------------------------
+codec
+                    total: 11845943    	(100.000%)
+                      eth: 11845943    	(100.000%)
+                     ipv4: 11845943    	(100.000%)
+                      tcp: 11845941    	(100.000%)
+                      udp: 2           	(  0.000%)
+--------------------------------------------------
+Module Statistics
+--------------------------------------------------
+ac_bnfa
+                 searches: 11845941
+                  matches: 7897632
+                    bytes: 35537823
+--------------------------------------------------
+ac_full
+                 searches: 4
+                  matches: 442
+                    bytes: 1196
+--------------------------------------------------
+appid
+                  packets: 11845943
+        processed_packets: 2
+          ignored_packets: 11845941
+           total_sessions: 2
+       service_cache_adds: 1
+             bytes_in_use: 168
+             items_in_use: 1
+--------------------------------------------------
+back_orifice
+                  packets: 2
+--------------------------------------------------
+binder
+              raw_packets: 11845941
+                new_flows: 1
+                 inspects: 11845942
+--------------------------------------------------
+detection
+                 analyzed: 11845943
+               hard_evals: 23692695
+             raw_searches: 11845941
+             pkt_searches: 11845941
+                   alerts: 7887888
+             total_alerts: 7887888
+                   logged: 7887888
+--------------------------------------------------
+ips_actions
+                    alert: 7887888
+--------------------------------------------------
+port_scan
+                  packets: 11845943
+                 trackers: 51
+--------------------------------------------------
+search_engine
+               max_queued: 1
+            total_flushed: 7897632
+            total_inserts: 7897632
+             total_unique: 7897632
+     non_qualified_events: 23702439
+         qualified_events: 7887888
+--------------------------------------------------
+stream
+                    flows: 1
+ no_flow_no_proto_handler: 11845941
+--------------------------------------------------
+stream_udp
+                 sessions: 1
+                      max: 1
+                  created: 2
+                 released: 2
+                 timeouts: 1
+              total_bytes: 598
+--------------------------------------------------
+wizard
+                udp_scans: 1
+               udp_misses: 1
+--------------------------------------------------
+Summary Statistics
+--------------------------------------------------
+process
+                  signals: 1
+--------------------------------------------------
+timing
+                  runtime: 00:01:26
+                  seconds: 86.089591
+                 pkts/sec: 137600
+                Mbits/sec: 63
+o")~   Snort exiting
