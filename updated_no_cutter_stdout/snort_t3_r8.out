@@ -1,0 +1,269 @@
+--------------------------------------------------
+o")~   Snort++ 3.10.2.0
+--------------------------------------------------
+Loading /home/cloudstack/raphael/snort3/etc/snort/snort.lua:
+Loading snort_defaults.lua:
+Finished snort_defaults.lua:
+	modbus
+	opcua
+	dce_smb
+	dce_udp
+	ftp_server
+	ftp_client
+	ftp_data
+	http2_inspect
+	wizard
+	ips
+	trace
+	http_inspect
+	references
+	classifications
+	binder
+	appid
+	js_norm
+	smtp
+	port_scan
+	gtp_inspect
+	dce_http_server
+	dce_http_proxy
+	dce_tcp
+	s7commplus
+	search_engine
+	packets
+	rpc_decode
+	alerts
+	daq
+	decode
+	host_cache
+	hosts
+	host_tracker
+	output
+	active
+	stream
+	network
+	process
+	so_proxy
+	stream_ip
+	stream_icmp
+	stream_udp
+	stream_user
+	stream_file
+	arp_spoof
+	back_orifice
+	dns
+	imap
+	netflow
+	normalizer
+	pop
+	sip
+	ssh
+	ssl
+	telnet
+	cip
+	dnp3
+	iec104
+	mms
+Finished /home/cloudstack/raphael/snort3/etc/snort/snort.lua:
+Loading rule args:
+Loading /home/cloudstack/raphael/snort3/rules/oi.rules:
+Finished /home/cloudstack/raphael/snort3/rules/oi.rules:
+Finished rule args:
+--------------------------------------------------
+pcre counts
+               pcre_rules: 2
+              pcre_native: 2
+--------------------------------------------------
+ips policies rule stats
+              id  loaded  shared enabled    file
+               0     186       0     186    /home/cloudstack/raphael/snort3/etc/snort/snort.lua
+--------------------------------------------------
+rule counts
+       total rules loaded: 186
+               text rules: 186
+            option chains: 186
+            chain headers: 72
+                 flowbits: 5
+     flowbits not checked: 1
+         flowbits not set: 2
+--------------------------------------------------
+port rule counts
+             tcp     udp    icmp      ip
+     any      19      12      12      12
+     src       5       2       0       0
+     dst      40      18       0       0
+    both       0       3       0       0
+   total      64      35      12      12
+--------------------------------------------------
+service rule counts          to-srv  to-cli
+                   dcerpc:       70      12
+                     dnp3:        0       6
+                      dns:        4       2
+                   gopher:        0       1
+                     http:        1       0
+                    http2:        1       0
+                    http3:        1       0
+                     imap:        1       0
+                   modbus:       21       0
+                    mysql:        0       1
+              netbios-dgm:        2       2
+              netbios-ssn:       40       5
+                      sip:        2       0
+                     snmp:        8       3
+                      ssl:        2       0
+                   syslog:        1       0
+                     tftp:        1       0
+                    total:      155      32
+--------------------------------------------------
+fast pattern groups
+                      dst: 2
+                to_server: 3
+                to_client: 3
+--------------------------------------------------
+search engine (ac_bnfa)
+                instances: 7
+                 patterns: 167
+            pattern chars: 1390
+               num states: 919
+         num match states: 62
+             memory scale: KB
+             total memory: 38.6475
+           pattern memory: 7.87402
+        match list memory: 12.3984
+        transition memory: 17.5
+        fast pattern only: 2
+appid: MaxRss diff: 3200
+appid: patterns loaded: 300
+--------------------------------------------------
+afpacket DAQ configured to passive.
+Commencing packet processing
+Retry queue interval is: 200 ms
+Retry queue interval is: 200 ms
+Retry queue interval is: 200 ms
+++ [0] enp3s0
+++ [1] enp3s0
+++ [2] enp3s0
+** caught int signal
+== stopping
+-- [0] enp3s0
+-- [2] enp3s0
+-- [1] enp3s0
+--------------------------------------------------
+Packet Statistics
+--------------------------------------------------
+daq
+                 received: 8959030
+                 analyzed: 8959030
+                  dropped: 5684364
+                    allow: 8959030
+                     idle: 176
+                 rx_bytes: 12010320786
+--------------------------------------------------
+codec
+                    total: 8959030     	(100.000%)
+                      arp: 28          	(  0.000%)
+                      eth: 8959030     	(100.000%)
+                    icmp4: 48          	(  0.001%)
+                 icmp4_ip: 38          	(  0.000%)
+                     ipv4: 8959002     	(100.000%)
+                      tcp: 8958840     	( 99.998%)
+                      udp: 114         	(  0.001%)
+--------------------------------------------------
+Module Statistics
+--------------------------------------------------
+ac_bnfa
+                 searches: 8958837
+                  matches: 11945328
+                    bytes: 11526527426
+--------------------------------------------------
+ac_full
+                 searches: 76
+                  matches: 614
+                    bytes: 3252
+--------------------------------------------------
+appid
+                  packets: 8959002
+        processed_packets: 162
+          ignored_packets: 8958840
+           total_sessions: 67
+       service_cache_adds: 21
+             bytes_in_use: 3528
+             items_in_use: 21
+--------------------------------------------------
+arp_spoof
+                  packets: 28
+--------------------------------------------------
+back_orifice
+                  packets: 114
+--------------------------------------------------
+binder
+              raw_packets: 8958868
+                new_flows: 67
+                 inspects: 8958935
+--------------------------------------------------
+detection
+                 analyzed: 8959030
+               hard_evals: 17918492
+             raw_searches: 8958837
+             pkt_searches: 8958837
+                   alerts: 11935584
+             total_alerts: 11935584
+                   logged: 11935584
+--------------------------------------------------
+dns
+                  packets: 98
+                 requests: 98
+             dns_over_udp: 98
+--------------------------------------------------
+ips_actions
+                    alert: 11935584
+--------------------------------------------------
+port_scan
+                  packets: 8959002
+                 trackers: 193
+--------------------------------------------------
+search_engine
+               max_queued: 2
+            total_flushed: 11945328
+            total_inserts: 11945328
+             total_unique: 11945328
+     non_qualified_events: 17928236
+         qualified_events: 11935584
+--------------------------------------------------
+stream
+                    flows: 67
+ no_flow_no_proto_handler: 8958840
+--------------------------------------------------
+stream_icmp
+                 sessions: 7
+                      max: 3
+                  created: 7
+                 released: 7
+--------------------------------------------------
+stream_udp
+                 sessions: 60
+                      max: 22
+                  created: 60
+                 released: 60
+              total_bytes: 4590
+--------------------------------------------------
+wizard
+                udp_scans: 16
+               udp_misses: 16
+--------------------------------------------------
+Appid Statistics
+--------------------------------------------------
+detected apps and services
+              Application: Services   Clients    Users      Payloads   Misc       Referred  
+                  unknown: 7          44         0          0          0          0         
+--------------------------------------------------
+Summary Statistics
+--------------------------------------------------
+process
+                  signals: 1
+--------------------------------------------------
+timing
+                  runtime: 00:01:27
+                  seconds: 87.090070
+                 pkts/sec: 102871
+                Mbits/sec: 1103
+o")~   Snort exiting
